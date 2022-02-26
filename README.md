@@ -41,14 +41,15 @@ function Contact() {
 ...
 ```
 
-## Write this 🤯🥳
+## Write this using React portals 🤯🥳
 
 ```js
 function App() {
   return (
     <BreadcrumbsProvider>
-      <BreadCrumbItem to="/">🏠</BreadCrumbItem>
-
+      <Breadcrumbs>
+        <BreadCrumbItem to="/">🏠</BreadCrumbItem>
+      </Breadcrumbs>
       <Routes>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
